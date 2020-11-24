@@ -4,6 +4,7 @@
   - all the variables in PC are public, so the controllers can read/write easily
   
   - input is keyboard I/O for testing, but is easily ported to any GUI by linking GUI event handler methods with a simple data object
+    - View interface has an abstract mnethod for defining how the client builds the UserInput object
     - user inputs need to create a UserInput object, which is a simple data object that your GUI events can create
       and pass to currentController.processPlayerAction(userInput) inside the runningGameState runStateLoop() method
     - the data needed for views needs to be wrapped up in a View object.
