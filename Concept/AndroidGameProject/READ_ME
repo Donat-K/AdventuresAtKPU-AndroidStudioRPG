@@ -3,12 +3,12 @@
 - all the game data used for processing is inside of PlayerCharacter
   - all the variables in PC are public, so the controllers can read/write easily
   
-  - input is keyboard I/O for testing, but is easily ported to any GUI by linking GUI event handler methods 
-  - how android handles updating the GUI may require me to change the View code, depending what data is passed from the main 
-    application. i can figure it out.
+  - input is keyboard I/O for testing, but is easily ported to any GUI by linking GUI event handler methods with a simple data object
     - user inputs need to create a UserInput object, which is a simple data object that your GUI events can create
       and pass to currentController.processPlayerAction(userInput) inside the runningGameState runStateLoop() method
     - the data needed for views needs to be wrapped up in a View object.
+     - how android handles updating the GUI may require me to change the View code, depending what data is passed from the main 
+       application. i can figure it out.
       
    - TODO:
     - finish and test game logic, including character courses
