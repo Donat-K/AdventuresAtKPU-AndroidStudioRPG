@@ -12,6 +12,7 @@
       
    - TODO:
     - finish and test game logic, including character courses
+    - simplify/wrap game logic with enumerated types for easier modification
     - port to android GUI
      
     
